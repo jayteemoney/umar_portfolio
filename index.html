@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="./style.css" />
+    <title>my portfolio</title>
+  </head>
+  <body class="bg-[#0E0724] text-gray-300">
+    <!-- header -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-[#558AAD] shadow-lg">
+      <nav
+        class="container mx-auto flex justify-between items-center py-4 px-6"
+      >
+        <a href="#" class="text-2xl font-bold">
+          <i class="fas fa-user inline-block h-10 w-10 mr-2"></i>
+          Portfolio
+        </a>
+        <div class="lg:hidden">
+          <button id="menu-btn" class="focus:outline-none">
+            <i class="fas fa-bars text-2xl"></i>
+          </button>
+        </div>
+        <!-- navbar links -->
+        <div id="menu" class="hidden lg:flex space-x-6">
+          <a href="#" class="hover:text-gray-400 transition-colors duration-300">Home
+          </a>
+          
+          <a
+            href="#about"
+            class="hover:text-gray-400 transition-colors duration-300">About
+          </a>
+
+          <a
+            href="#portfolio"
+            class="hover:text-gray-400 transition-colors duration-300">Portfolio
+          </a>
+
+          <a
+            href="#contact"
+            class="hover:text-gray-400 transition-colors duration-300">Contact
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- hero secion -->
+      <section class="h-screen flex items-center justify-center relative">
+        <div class="text-center">
+          <h1 class="text-4xl lg:text-6xl font-bold mb-4">
+            Welcome to my Portfolio
+          </h1>
+          <p class="text-lg lg:text-xl mb-8">
+            Discover the extraordinary web creations of WebDeveloper
+          </p>
+          <a
+            href="#about"
+            class="inline-block bg-[#558AAD] hover:bg-[#27223E] text-gray-300 font-medium py-3 px-6 rounded-[20px] transition-colors duration-300"
+          >
+            Explore
+          </a>
+        </div>
+
+        <div class="absolute top-0 left-0 w-full h-full pointer-events-none">
+          <div class="bubble-animation"></div>
+          <div class="bubble-animation" style="top: 20%; left: 30%"></div>
+          <div class="bubble-animation" style="bottom: 25%; left: 50%"></div>
+          <div class="bubble-animation" style="top: 50%; left: 90%"></div>
+          <div class="bubble-animation" style="top: 60%; left: 70%"></div>
+          <div class="bubble-animation" style="top: 80%; left: 10%"></div>
+          <div class="bubble-animation" style="top: 90%; left: 80%"></div>
+        </div>
+      </section>
+
+      <!-- about section -->
+      <section id="about" class="py-20 bg-[#0E0724]">
+        <div class="container mx-auto px-4">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            <div>
+              <h2 class="text-3xl font-bold mb-8 text-center bg-[#558AAD] w-[200px] h-200px] rounded-[10px] p-[5px]">About Me</h2>
+              <p class="mb-6">
+                As a passionate web developer with fundamental knowledge and experience, 
+                I craft innovative digital solutions that drive results. 
+                With expertise in [javaScript (Client-side), HTML/CSS. 
+                undergoing intensive learning in TypeScript,  React, and etherJS.], I deliver responsive, 
+                user-friendly, and visually stunning websites. My focus is on writing clean, 
+                efficient code and providing exceptional user experiences.
+              </p>
+              <p class="mb-6">
+                I'm IRMIYA JETHRO MBATA, a web developer fueled by curiosity and creativity. 
+                My journey began in July, 2024, and since then, 
+                I've honed skills in HTML, CSS (both vannila and tailwind), javaScript etc. 
+                I believe in making the web accessible, 
+                intuitive, and beautiful. With each project, I strive to tell a story through code, 
+                combining functionality with aesthetics.
+
+              </p>
+              <p class="mb-6">
+                My passion for web development knows no bounds, and I am
+                constantly seeking new challenges to push the boundaries of
+                what's possible in the online realm. From responsive, accessible
+                designs to lightning-fast performance and cutting-edge
+                interactivity, I have the ability to transform even the most
+                ambitious ideas into reality.
+              </p>
+            </div>
+
+            <div class="relative">
+              <img
+                src="/img/jay.jpg"
+                alt="About Image"
+                class="w-full h-full object-cover rounded-[50%] shadow-lg mx-auto"
+                style="width: 300px; height: 300px"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio Section -->
+      <section id="portfolio" class="py-[#0E0724]">
+        <div class="container mx-auto px-4">
+          <h2 class="text-3xl font-bold mb-8 text-center bg-[#558AAD] w-[200px] h-200px] rounded-[10px] p-[5px] ml-[40%]">My Portfolio</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+            <div class="bg-[#558AAD] rounded-md shadow-lg overflow-hidden">
+              <img
+                src="/img/mortgage.JPG"
+                alt="Portfolio Item 1"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-4">
+                <h3 class="text-xl font-bold mb-2">Project 1</h3>
+                <p>
+                 I Created a user-friendly mortgage calculator that helps users estimate 
+                  their monthly mortgage payments based on key loan parameters.
+  
+                </p>
+              </div>
+            </div>
+
+            <div class="bg-[#558AAD] rounded-md shadow-lg overflow-hidden">
+              <img
+                src="/img/twitter.JPG"
+                alt="Portfolio Item 2"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-4">
+                <h3 class="text-xl font-bold mb-2">Project 2</h3>
+                <p>
+                  tried to clone twitter(now X) page. making it efficient and user-friendly.
+                </p>
+              </div>
+            </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Contact Section -->
+      <section id="contact" class="py-20 bg-[#0E0724] relative">
+        <div class="container mx-auto px-4">
+          <h2 class="text-3xl font-bold mb-8 text-center bg-[#558AAD] w-[200px] h-200px] rounded-[10px] p-[5px] ml-[40%]">Get in Touch</h2>
+          <form class="max-w-md mx-auto">
+            <div class="mb-4">
+              <label for="name" class="block font-medium mb-2">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="w-full bg-gray-700 border-gray-600 rounded-md py-2 px-3 focus:outline-none focus:ring-2 focus:ring-gray-500"
+                required
+              />
+            </div>
+            <div class="mb-4">
+              <label for="email" class="block font-medium mb-2">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="w-full bg-gray-700 border-gray-600 rounded-md py-2 px-3 focus:outline-none focus:ring-2 focus:ring-gray-500"
+                required
+              />
+            </div>
+            <div class="mb-4">
+              <label for="message" class="block font-medium mb-2"
+                >Message</label
+              >
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                class="w-full bg-gray-700 border-gray-600 rounded-md py-2 px-3 focus:outline-none focus:ring-2 focus:ring-gray-500"
+                required
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="w-full bg-gray-700 hover:bg-[#558AAD] font-medium py-2 px-4 rounded-md transition-colors duration-300"
+            >
+              Send Message
+            </button>
+          </form>
+          <div class="absolute top-0 left-0 w-full h-full pointer-events-none">
+            <div class="bubble-animation"></div>
+            <div class="bubble-animation" style="top: 20%; left: 30%"></div>
+            <div class="bubble-animation" style="top: 60%; left: 70%"></div>
+            <div class="bubble-animation" style="top: 80%; left: 10%"></div>
+            <div class="bubble-animation" style="top: 50%; left: 80%"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-[#558AAD] py-6">
+      <div class="container mx-auto px-4 flex justify-between items-center">
+        <p class="text-gray-50">
+          &copy; 2024 WebDeveloper All rights reserved.
+        </p>
+        <div class="space-x-4">
+          <a
+            href="https://web.facebook.com/jethro.mbata"
+            class="text-gray-400 hover:text-gray-300 transition-colors duration-300"
+          >
+            <i class="fab fa-facebook-f text-gray-50" ></i>
+          </a>
+          <a
+            href="https://x.com/dev_jaytee"
+            class="text-gray-400 hover:text-gray-300 transition-colors duration-300"
+          >
+            <i class="fab fa-twitter text-gray-50"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/jethro-irmiya-a2153427b/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BZz%2F%2BwdMDSZ%2B6HYLBnm5sEA%3D%3D"
+            class="text-gray-400 hover:text-gray-300 transition-colors duration-300"
+          >
+            <i class="fab fa-linkedin-in text-gray-50"></i>
+          </a>
+          <a
+            href="https://github.com/dashboard"
+            class="text-gray-400 hover:text-gray-300 transition-colors duration-300"
+          >
+            <i class="fab fa-github text-gray-50"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

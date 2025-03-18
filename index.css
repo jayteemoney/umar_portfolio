@@ -1,0 +1,21 @@
+.bubble-animation {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #558AAD;
+    border-radius: 50%;
+    animation: bubble-float 5s ease-in-out infinite;
+  }
+  
+  @keyframes bubble-float {
+    0% {
+      transform: translateY(0) translateX(0);
+    }
+    50% {
+      transform: translateY(80px) translateX(50px);
+    }
+    100% {
+      transform: translateY(0) translateX(0);
+    }
+  }
+  
